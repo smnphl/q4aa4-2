@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="605.0" maxWidth="800.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="q4aaproj_pho_asuncionbosimanuel.AboutUsController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" opacity="0.48">
+         <image>
+            <Image url="@imgs/mainmenu_bg.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="153.0" layoutY="21.0" prefHeight="47.0" prefWidth="101.0">
+         <children>
+            
+            <HBox prefHeight="79.0" prefWidth="331.0">
+               <children>
+                  <VBox prefHeight="76.0" prefWidth="55.0">
+                     <children>
+                        <BorderPane prefHeight="71.0" prefWidth="55.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></Pane>
+      <Text fill="WHITE" layoutX="581.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unleash Your Creativity With us!" textAlignment="CENTER" wrappingWidth="821.4788208007812">
+         <font>
+            <Font name="Footlight MT Light" size="96.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <ImageView fitHeight="365.0" fitWidth="430.0" layoutX="509.0" layoutY="390.0">
+         <image>
+            <Image url="@imgs/sohcahtoa.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="990.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SohCahToa is comprised of members, Chloe, Shanel, and Sophia, students from the Philippine Science High School Main Campus. The group aims to build an interactive world around the fantasy of creatures/insects in &quot;Wisteria Grove&quot;." wrappingWidth="498.39990234375">
+         <font>
+            <Font name="Californian FB" size="36.0" />
+         </font>
+      </Text>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+    <Button layoutX="89.0" layoutY="928.0" mnemonicParsing="false" onAction="#exitToTitle" prefHeight="38.0" prefWidth="141.0" style="-fx-background-color: white;" text="Main Menu">
+         <font>
+            <Font name="Footlight MT Light" size="22.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.9800000190734863" green="0.34299999475479126" blue="0.34299999475479126" opacity="0.9665653705596924" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

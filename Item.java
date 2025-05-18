@@ -1,74 +1,38 @@
-package q2aa2_pho_asuncion.bosi.manuel;
-import java.util.Scanner;
 
-public abstract class Item implements Interactable {
-    protected String name;
-    protected int count; //how many of the Item r in inventory
-    protected boolean isTradeable;
-    protected boolean isInventory;
-    protected boolean isFood;
-    protected boolean isMoney;
-    protected boolean isPlant;
-    protected String rarity;
-    protected InventoryManager inventory = new InventoryManager();
-    protected static final Scanner sc = new Scanner(System.in);
-    
-    boolean interact = true;
-    
-    public Item(String name, boolean isTradeable, boolean isInventory, boolean isFood, boolean isMoney, boolean isPlant, String rarity) {
+package q4aaproj_pho_asuncionbosimanuel;
+
+
+import javafx.scene.image.Image;
+
+import javafx.scene.image.Image;
+
+public class Item {
+    private String name;
+    private Image image;
+    private String type;  // (Optional) Type of item: weapon, armor, consumable, etc.
+
+    public Item(String name, Image image) {
         this.name = name;
-        this.isTradeable = isTradeable;
-        this.isInventory = isInventory;
-        this.isMoney = isMoney;
-        this.isFood = isFood;
-        this.rarity = rarity;
+        this.image = image;
     }
-    
+
     public String getName() {
         return name;
     }
-    
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    public int getCount() {
-        return count;
+
+    public Image getImage() {
+        return image;
     }
 
-    public void setCount(int count) {
-        if (count < 0) {
-            throw new IllegalArgumentException("\nQuantity cannot be negative.");
-        }
-        this.count = count;
-    }
-    
-    public boolean checkTradeable() {
-        return true; 
+    public void setImage(Image image) {
+        this.image = image;
     }
 
-    public boolean checkInventory() {
-        return true; 
+    public String getType() {
+        return type;
     }
 
-    public boolean checkFood() {
-        return false; 
-    }
-
-    public boolean checkMoney() {
-        return false; 
-    }
-    
-    public String getRarity() {
-        return rarity;
-    }
-    
-    public void setRarity(String rarity) {
-        this.rarity = rarity;
-    }
-    
-    @Override
-    public void interact() {
-        System.out.println("smth");
+    public void setType(String type) {
+        this.type = type;
     }
 }

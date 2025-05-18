@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="q4aaproj_pho_asuncionbosimanuel.LoreController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="-11.0" layoutY="-11.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/mainmenu_bg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="20.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/exitbutton.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="exitButton" layoutX="20.0" layoutY="26.0" mnemonicParsing="false" onAction="#openMainMenu" onMouseClicked="#openMainMenu" opacity="0.0" prefHeight="100.0" prefWidth="100.0" text="Exit">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+            <Button fx:id="skipButton" layoutX="1738.0" layoutY="37.0" mnemonicParsing="false" onAction="#openMainGame" onMouseClicked="#openMainGame" opacity="0.0" prefHeight="75.0" prefWidth="149.0" text="Skip">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1737.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/skipbutton.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="1671.0" layoutY="945.0" prefHeight="96.0" prefWidth="218.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/backbutton.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="backButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#onBackButtonClicked" opacity="0.0" prefHeight="100.0" prefWidth="100.0" text="Back" textAlignment="RIGHT">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@imgs/nextbutton.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="nextButton" mnemonicParsing="false" onAction="#onNextButtonClicked" onMouseClicked="#onNextButtonClicked" opacity="0.0" prefHeight="100.0" prefWidth="100.0" text="Next" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+            <Text fx:id="loreText" layoutX="253.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  " wrappingWidth="1377.0560302734375">
+               <font>
+                  <Font name="Footlight MT Light" size="96.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
